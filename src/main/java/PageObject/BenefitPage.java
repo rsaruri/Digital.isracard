@@ -27,20 +27,17 @@ public class BenefitPage extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	
 	/**
-	 * click on benefit
+	 * Click on benefit, open benefit page and download
 	 * @param benefitName
 	 */
-	public void ClickOnBenefit (WebElement benefitName) {
-		benefitName.click();
-	}
-	
 	
 	public void downloadBenefit (WebElement benefitName) {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		
-		ClickOnBenefit(benefitName);
+		benefitName.click();
 		
 		assertTrue(BasePage.isOnPageByTitle(driver, driver.getTitle()));
 		

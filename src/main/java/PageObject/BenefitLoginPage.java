@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BenefitLoginPage extends BasePage {
 	
-	@FindBy (id = "IdNumberTxt")
+	@FindBy (id = "IdNumber")
 	public WebElement benefitIdInput;
 	
-	@FindBy (id="CardSuffixTxt")
+	@FindBy (id="CardNumberSuffix")
 	public WebElement benefitDigitsInput;
 	
 	@FindBy (id = "loginFormBtn")
